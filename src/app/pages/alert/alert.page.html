@@ -1,0 +1,23 @@
+
+<app-header [titulo]="titulo || 'Alert Page'"></app-header>
+<!-- <ion-header>
+  <ion-toolbar>
+
+    Boton de reresar 
+    <ion-buttons slot="start">
+      <ion-back-button text="Regresar" defaulHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>alert</ion-title>
+
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content class="ion-padding">
+  <ion-button color="primary" expand="full" (click)="presentAlert()">Mostrar Alerta</ion-button>
+  <ion-button color="primary" expand="full" (click)="presentAlertMultipleButtons()">Mostrar Alerta Multiples Botones</ion-button>
+  <ion-button color="primary" expand="full" (click)="presentAlertConfirm()">Mostrar Alerta Confirmar</ion-button>
+  <ion-button color="primary" expand="full" (click)="presentAlertPrompt()">Mostrar Alerta Prompt Cambia Título</ion-button>
+  <ion-button color="primary" expand="full" (click)="presentAlertRadio()">Mostrar Alerta Radio</ion-button>
+  <ion-button color="primary" expand="full" (click)="presentAlertCheckbox()">Mostrar Alerta Checkbox</ion-button>
+</ion-content>
