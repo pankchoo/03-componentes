@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Componente } from '../interfaces/interfaces';
+import { delay } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -14,5 +15,16 @@ export class DataService {
   // Implementa el menu, ya no va en el arreglo de inicio.page.ts se lo movió a assets y se guardó ahí el json
   getMenuOpts() {
     return this.http.get<Componente[]>('/assets/data/menu.json');
+  }
+
+  getAlbumes() {
+    return this.http.get<any[]>('https://jsonplaceholder.typicode.com/albums');
+  }
+
+  getHeroes() {
+    return this.http.get('/assets/data/superheroes.json')
+    .pipe(
+      delay(1500)
+    );
   }
 }

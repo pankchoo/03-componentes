@@ -88,5 +88,25 @@
       "icon": "arrow-down-circle-outline",
       "name": "Refresher",
       "redirecTo": "/refresher"
+    },
+    {
+      "icon": "search-outline",
+      "name": "Searchbar",
+      "redirecTo": "/searchbar"
+    },
+    {
+      "icon": "copy-outline",
+      "name": "Segment y Skeleton",
+      "redirecTo": "/segment"
+    },
+    {
+      "icon": "albums-outline",
+      "name": "Slides",
+      "redirecTo": "/slides"
+    },
+    {
+      "icon": "cog-outline",
+      "name": "Tabs",
+      "redirecTo": "/tabs/account"
     }
    ]

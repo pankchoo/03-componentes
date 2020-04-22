@@ -22,7 +22,7 @@ export class InfiniteScrollPage implements OnInit {
 
     setTimeout(() => {
 
-      if (this.data.length>50){
+      if (this.data.length > 50) {
         event.target.complete();
         this.infiniteScroll.disabled = true;
         return;
